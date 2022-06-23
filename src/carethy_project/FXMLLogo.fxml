@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="re" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#click" prefHeight="500.0" prefWidth="300.0" style="-fx-background-color: linear-gradient(#871c97,#a32ab6,#95059c,#a429ba,#972cbb);" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carethy_project.FXMLLogoController">
+   <children>
+      <ImageView fitHeight="184.0" fitWidth="231.0" layoutX="48.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logo.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="1.0" contrast="1.0" hue="1.0" saturation="1.0" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="50.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/oie_transparent%20(3).png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="0.21" contrast="1.0" hue="1.0" saturation="-1.0" />
+         </effect>
+      </ImageView>
+   </children>
+</Pane>

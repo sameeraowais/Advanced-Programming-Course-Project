@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carethy_project.FXMLUpdatesController">
+   <children>
+      <HBox layoutX="28.0" layoutY="265.0" prefHeight="40.0" prefWidth="187.0" spacing="10.0">
+         <children>
+            <Label id="CurrentWeight" prefHeight="30.0" prefWidth="87.0" text="Current Weight:" textFill="#320944" />
+            <TextField id="Cweight" fx:id="Cweight" alignment="TOP_LEFT" prefHeight="28.0" prefWidth="55.0" />
+         </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </HBox>
+      <Slider id="slider" fx:id="slider" layoutX="23.0" layoutY="365.0" prefHeight="33.0" prefWidth="254.0" value="50.0" />
+      <HBox layoutX="9.0" layoutY="391.0" prefHeight="27.0" prefWidth="290.0" spacing="30.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="94.0" text="Under weight" textFill="#320944" />
+            <Label prefHeight="17.0" prefWidth="70.0" text="Normal" textFill="#320944" />
+            <Label prefHeight="17.0" prefWidth="84.0" text="Overweight" textFill="#320944" />
+         </children>
+      </HBox>
+      <HBox layoutX="28.0" layoutY="21.0" prefHeight="95.0" prefWidth="245.0">
+         <children>
+            <VBox prefHeight="100.0" prefWidth="147.0" spacing="10.0">
+               <children>
+                  <Label text="The number of Exercises :" textFill="#320944">
+                     <font>
+                        <Font size="13.0" />
+                     </font></Label>
+                  <Label text="Calories :" textFill="#320944">
+                     <font>
+                        <Font size="13.0" />
+                     </font></Label>
+                  <Label text="Days completed :" textFill="#320944">
+                     <font>
+                        <Font size="13.0" />
+                     </font></Label>
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </VBox>
+            <VBox prefHeight="91.0" prefWidth="97.0" spacing="10.0">
+               <children>
+                  <Label id="NExercises" fx:id="NExercises" />
+                  <Label id="NCalories" fx:id="NCalories" />
+                  <Label id="Ndays" fx:id="Ndays" />
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </VBox>
+         </children>
+      </HBox>
+      <FlowPane alignment="CENTER" columnHalignment="CENTER" layoutX="57.0" layoutY="155.0" prefHeight="95.0" prefWidth="187.0" style="-fx-background-color: #320944;" vgap="3.0">
+         <children>
+            <CheckBox id="day1" fx:id="day1" mnemonicParsing="false" />
+            <CheckBox id="day2" fx:id="day2" mnemonicParsing="false" />
+            <CheckBox id="day3" fx:id="day3" mnemonicParsing="false" />
+            <CheckBox fx:id="day4" mnemonicParsing="false" />
+            <CheckBox fx:id="day5" mnemonicParsing="false" />
+            <CheckBox fx:id="day6" mnemonicParsing="false" />
+            <CheckBox fx:id="day7" mnemonicParsing="false" />
+            <CheckBox fx:id="day8" mnemonicParsing="false" />
+            <CheckBox fx:id="day9" mnemonicParsing="false" />
+            <CheckBox fx:id="day10" mnemonicParsing="false" />
+            <CheckBox fx:id="day11" mnemonicParsing="false" />
+            <CheckBox fx:id="day12" mnemonicParsing="false" />
+            <CheckBox fx:id="day13" mnemonicParsing="false" />
+            <CheckBox fx:id="day14" mnemonicParsing="false" />
+            <CheckBox fx:id="day15" mnemonicParsing="false" />
+            <CheckBox fx:id="day16" mnemonicParsing="false" />
+            <CheckBox fx:id="day17" mnemonicParsing="false" />
+            <CheckBox fx:id="day18" mnemonicParsing="false" />
+            <CheckBox fx:id="day19" mnemonicParsing="false" />
+            <CheckBox fx:id="day20" mnemonicParsing="false" />
+            <CheckBox fx:id="day21" mnemonicParsing="false" />
+            <CheckBox fx:id="day22" mnemonicParsing="false" />
+            <CheckBox fx:id="day23" mnemonicParsing="false" />
+            <CheckBox fx:id="day24" mnemonicParsing="false" />
+            <CheckBox fx:id="day25" mnemonicParsing="false" />
+            <CheckBox fx:id="day26" mnemonicParsing="false" />
+            <CheckBox fx:id="day27" mnemonicParsing="false" />
+            <CheckBox fx:id="day28" mnemonicParsing="false" />
+         </children>
+         <padding>
+            <Insets left="5.0" />
+         </padding>
+      </FlowPane>
+      <HBox layoutX="28.0" layoutY="305.0" prefHeight="40.0" prefWidth="176.0" spacing="10.0">
+         <children>
+            <Label contentDisplay="CENTER" prefHeight="30.0" prefWidth="87.0" text="Current Height:" textFill="#320944" />
+            <TextField id="CHeight" fx:id="CHeight" prefHeight="28.0" prefWidth="56.0" />
+         </children>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </HBox>
+      <Button layoutX="-1.0" layoutY="433.0" mnemonicParsing="false" onAction="#updates" prefHeight="69.0" prefWidth="105.0" style="-fx-background-color: #320944;" text="My Report" textFill="WHITE">
+         <padding>
+            <Insets bottom="-30.0" />
+         </padding>
+      </Button>
+      <Button layoutX="99.0" layoutY="433.0" mnemonicParsing="false" onAction="#profile" prefHeight="69.0" prefWidth="105.0" style="-fx-background-color: #320944;" text="My Profile" textFill="WHITE">
+         <padding>
+            <Insets bottom="-30.0" />
+         </padding>
+      </Button>
+      <Button layoutX="203.0" layoutY="433.0" mnemonicParsing="false" onAction="#exercises" prefHeight="69.0" prefWidth="105.0" style="-fx-background-color: #320944;" text="Challenges" textFill="WHITE">
+         <padding>
+            <Insets bottom="-30.0" />
+         </padding>
+      </Button>
+      <Line endX="-71.3323974609375" endY="41.352813720703125" layoutX="173.0" layoutY="447.0" opacity="0.3" startX="-71.3323974609375" startY="-1.2598876953125" stroke="WHITE" />
+      <Line endX="-71.3323974609375" endY="41.352813720703125" layoutX="276.0" layoutY="447.0" opacity="0.3" startX="-71.3323974609375" startY="-1.2598876953125" stroke="WHITE" />
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="31.0" layoutY="436.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8_combo_chart_64px_1.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="1.0" contrast="1.0" hue="1.0" saturation="1.0" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="134.0" layoutY="436.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8_profiles_64px_1.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="1.0" contrast="1.0" hue="1.0" saturation="1.0" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="51.0" fitWidth="40.0" layoutX="231.0" layoutY="436.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8_barbell_64px_1.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="1.0" contrast="1.0" hue="1.0" saturation="1.0" />
+         </effect>
+      </ImageView>
+   </children>
+</Pane>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#keyPressed" prefHeight="500.0" prefWidth="300.0" style="-fx-background-color: #8e51a2;" styleClass="height" stylesheets="@carethy_css.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carethy_project.FXMLHeightWeightController">
+   <children>
+      <Pane layoutX="13.0" layoutY="21.0" opacity="0.92" prefHeight="458.0" prefWidth="275.0" style="-fx-background-color: white;">
+         <children>
+            <RadioButton id="buttonweightkg" fx:id="buttonweightkg" layoutX="79.0" layoutY="129.0" mnemonicParsing="false" selected="true" text="kg">
+               <toggleGroup>
+                  <ToggleGroup fx:id="buttonweight" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton id="buttonweightlb" fx:id="buttonweightlb" layoutX="152.0" layoutY="129.0" mnemonicParsing="false" text="lb" toggleGroup="$buttonweight" />
+            <TextField id="textweigth" fx:id="textweigth" layoutX="42.0" layoutY="170.0" prefHeight="25.0" prefWidth="180.0" promptText="Weight" />
+            <RadioButton id="buttonheightm" fx:id="buttonheightm" layoutX="78.0" layoutY="221.0" mnemonicParsing="false" selected="true" text="m">
+               <toggleGroup>
+                  <ToggleGroup fx:id="buttonheight" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton id="buttonheightft" fx:id="buttonheightft" layoutX="153.0" layoutY="221.0" mnemonicParsing="false" text="ft" toggleGroup="$buttonheight" />
+            <TextField id="textheight" fx:id="textheight" layoutX="41.0" layoutY="259.0" prefHeight="25.0" prefWidth="180.0" promptText="Height" /> 
+            <Button id="buttonstart" fx:id="buttonstart" alignment="CENTER" layoutX="96.0" layoutY="327.0" mnemonicParsing="false" onAction="#buttonstartA" prefHeight="43.0" prefWidth="71.0" style="-fx-background-color: #320944;" text="START" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Button>
+            <Label layoutX="11.0" layoutY="14.0" prefHeight="67.0" prefWidth="254.0" text="Please Enter Your Weight and Height" textAlignment="CENTER" textFill="#630a69" wrapText="true">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</Pane>

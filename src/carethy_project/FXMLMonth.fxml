@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="300.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carethy_project.FXMLMonthController">
+   <children>
+      <ImageView fitHeight="336.0" fitWidth="284.0" layoutX="6.0" layoutY="50.0" opacity="0.17" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/oie_transparent%20(4)_1.png" />
+         </image>
+         <effect>
+            <ColorAdjust hue="0.24" />
+         </effect>
+      </ImageView>
+      <Button fx:id="m_w1" layoutX="59.0" layoutY="157.0" mnemonicParsing="false" onAction="#m_w1" prefHeight="51.0" prefWidth="183.0" style="-fx-background-color: #B596C2;" text="Week 1" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font></Button>
+      <Button fx:id="m_w2" layoutX="59.0" layoutY="218.0" mnemonicParsing="false" onAction="#m_w2" prefHeight="51.0" prefWidth="183.0" style="-fx-background-color: #B596C2;" text="Week 2" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font></Button>
+      <Button fx:id="m_w3" layoutX="59.0" layoutY="278.0" mnemonicParsing="false" onAction="#m_w3" prefHeight="51.0" prefWidth="183.0" style="-fx-background-color: #B596C2;" text="Week 3" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font></Button>
+      <Button fx:id="m_w4" layoutX="59.0" layoutY="340.0" mnemonicParsing="false" onAction="#m_w4" prefHeight="51.0" prefWidth="183.0" style="-fx-background-color: #B596C2;" text="Week 4" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font></Button>
+      <Text fill="#550f59" layoutX="69.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Month Challenge">
+         <font>
+            <Font name="Britannic Bold" size="22.0" />
+         </font>
+      </Text>
+      <Button layoutX="-6.0" layoutY="434.0" mnemonicParsing="false" onAction="#updates" prefHeight="69.0" prefWidth="105.0" style="-fx-background-color: #320944;" text="My Report" textFill="WHITE">
+         <padding>
+            <Insets bottom="-30.0" />
+         </padding>
+      </Button>
+      <Button layoutX="98.0" layoutY="434.0" mnemonicParsing="false" onAction="#profile" prefHeight="69.0" prefWidth="105.0" style="-fx-background-color: #320944;" text="My Profile" textFill="WHITE">
+         <padding>
+            <Insets bottom="-30.0" />
+         </padding>
+      </Button>
+      <Button layoutX="196.0" layoutY="434.0" mnemonicParsing="false" onAction="#exercises" prefHeight="69.0" prefWidth="105.0" style="-fx-background-color: #320944;" text="Challenges" textFill="WHITE">
+         <padding>
+            <Insets bottom="-30.0" />
+         </padding>
+      </Button>
+      <Line endX="-71.3323974609375" endY="41.352813720703125" layoutX="170.0" layoutY="451.0" opacity="0.3" startX="-71.3323974609375" startY="-1.2598876953125" stroke="WHITE" />
+      <Line endX="-71.3323974609375" endY="41.352813720703125" layoutX="267.0" layoutY="451.0" opacity="0.3" startX="-71.3323974609375" startY="-1.2598876953125" stroke="WHITE" />
+      <ImageView fitHeight="51.0" fitWidth="40.0" layoutX="229.0" layoutY="438.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8_barbell_64px_1.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="1.0" contrast="1.0" hue="1.0" saturation="1.0" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="129.0" layoutY="438.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8_profiles_64px_1.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="1.0" contrast="1.0" hue="1.0" saturation="1.0" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="27.0" layoutY="434.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8_combo_chart_64px_1.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="1.0" contrast="1.0" hue="1.0" saturation="1.0" />
+         </effect>
+      </ImageView>
+   </children>
+</AnchorPane>

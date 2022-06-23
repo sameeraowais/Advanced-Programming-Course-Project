@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="501.0" prefWidth="300.0" style="-fx-background-color: white;" styleClass="body" stylesheets="@carethy_css.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carethy_project.FXMLSignController">
+<children>
+<HBox fx:id="hbox_signin" prefHeight="70.0" prefWidth="300.0" style="-fx-background-color: white;">
+<children>
+<Button mnemonicParsing="false" onAction="#SigninPaneShow" prefHeight="75.0" prefWidth="151.0" style="-fx-background-color: #320944;" text="Sign in" textFill="WHITE">
+<HBox.margin>
+<Insets left="-2.0" top="-5.0" />
+</HBox.margin>
+<font>
+<Font name="Comic Sans MS" size="16.0" />
+</font>
+</Button>
+<Button mnemonicParsing="false" onAction="#SignupPaneShow" opacity="0.39" prefHeight="75.0" prefWidth="151.0" style="-fx-background-color: #320944;" text="Sign up" textFill="WHITE">
+<HBox.margin>
+<Insets right="-2.0" top="-5.0" />
+</HBox.margin>
+<font>
+<Font name="Comic Sans MS" size="16.0" />
+</font>
+</Button>
+</children>
+</HBox>
+<HBox fx:id="hbox_signup" prefHeight="70.0" prefWidth="300.0" style="-fx-background-color: white;" visible="false">
+<children>
+<Button mnemonicParsing="false" onAction="#SigninPaneShow" opacity="0.39" prefHeight="75.0" prefWidth="151.0" style="-fx-background-color: #320944;" text="Sign in" textFill="WHITE">
+<HBox.margin>
+<Insets left="-2.0" top="-5.0" />
+</HBox.margin>
+<font>
+<Font name="Comic Sans MS" size="16.0" />
+</font>
+</Button>
+<Button mnemonicParsing="false" onAction="#SignupPaneShow" prefHeight="75.0" prefWidth="151.0" style="-fx-background-color: #320944;" text="Sign up" textFill="WHITE">
+<HBox.margin>
+<Insets right="-2.0" top="-5.0" />
+</HBox.margin>
+<font>
+<Font name="Comic Sans MS" size="16.0" />
+</font>
+</Button>
+</children>
+</HBox>
+<AnchorPane fx:id="pane_signup" layoutY="70.0" onKeyPressed="#keyPressedSignup" prefHeight="245.0" prefWidth="300.0" style="-fx-background-color: white;" visible="false" AnchorPane.bottomAnchor="186.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="70.0">
+<children>
+<TextField fx:id="text_username" layoutX="111.0" layoutY="54.0" promptText="Enter your username" />
+<PasswordField fx:id="text_password" layoutX="111.0" layoutY="128.0" promptText="Enter a password" />
+<Label layoutX="45.0" layoutY="59.0" text="username">
+<font>
+<Font name="Comic Sans MS" size="11.0" />
+</font>
+</Label>
+<Label layoutX="47.0" layoutY="95.0" text="e-mail">
+<font>
+<Font name="Comic Sans MS" size="11.0" />
+</font>
+</Label>
+<Label layoutX="45.0" layoutY="133.0" text="password">
+<font>
+<Font name="Comic Sans MS" size="11.0" />
+</font>
+</Label>
+<TextField fx:id="text_email" layoutX="111.0" layoutY="90.0" promptText="Enter your email" />
+<Label layoutX="54.0" layoutY="164.0" prefHeight="17.0" prefWidth="206.0" text="By clicking sign up, you agree to our terms &amp; conditions " textFill="#000000b2">
+<font>
+<Font size="8.0" />
+</font>
+</Label>
+<Label layoutX="81.0" layoutY="179.0" prefHeight="17.0" prefWidth="152.0" text="and that you have read our privacy policy" textFill="#000000b2">
+<font>
+<Font size="8.0" />
+</font>
+</Label>
+<Button fx:id="btn_signup" layoutX="85.0" layoutY="203.0" mnemonicParsing="false" onAction="#register" prefHeight="37.0" prefWidth="130.0" style="-fx-background-color: #320944;" text="Sign up" textFill="WHITE">
+<font>
+<Font name="Comic Sans MS" size="16.0" />
+</font>
+</Button>
+</children>
+</AnchorPane>
+<AnchorPane fx:id="pane_signin" layoutY="70.0" onKeyPressed="#keyPressedSignin" prefHeight="208.0" prefWidth="300.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="217.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="70.0">
+<children>
+<TextField fx:id="text_username1" layoutX="112.0" layoutY="44.0" promptText="Enter your username" />
+<Label layoutX="40.0" layoutY="49.0" text="username">
+<font>
+<Font name="Comic Sans MS" size="11.0" />
+</font>
+</Label>
+<Label layoutX="41.0" layoutY="98.0" text="password">
+<font>
+<Font name="Comic Sans MS" size="11.0" />
+</font>
+</Label>
+<PasswordField fx:id="text_password1" layoutX="112.0" layoutY="93.0" promptText="Enter a password" />
+<Button fx:id="btn_signin" layoutX="85.0" layoutY="168.0" mnemonicParsing="false" onAction="#handleSigninAction" prefHeight="37.0" prefWidth="130.0" style="-fx-background-color: #320944;" text="Sign in" textFill="WHITE">
+<font>
+<Font name="Comic Sans MS" size="16.0" />
+</font>
+</Button>
+<CheckBox fx:id="checkbox" layoutX="104.0" layoutY="142.0" mnemonicParsing="false" text="remember me" textFill="#000000c4">
+<font>
+<Font name="Comic Sans MS" size="11.0" />
+</font>
+</CheckBox>
+</children>
+</AnchorPane>
+</children>
+</AnchorPane>

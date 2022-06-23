@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carethy_project.FXMLDaysCompletedController">
+   <children>
+      <TabPane fx:id="tabpane" prefHeight="417.0" prefWidth="300.0" style="-fx-tab-min-width: 40; -fx-tab-max-width: 100;" tabClosingPolicy="UNAVAILABLE" tabMaxWidth="20.0">
+        <tabs>
+          <Tab fx:id="Sun" disable="true" style="-fx-pref-width: 40; -fx-font-size: 12; -fx-padding: 0;" text="Sun">
+               <content>
+                  <AnchorPane prefHeight="375.0" prefWidth="300.0">
+                     <children>
+                        <Circle fill="#e6b9f8" layoutX="263.0" layoutY="346.0" onMouseClicked="#E4" radius="22.0" stroke="WHITE" strokeType="INSIDE" />
+                        <Circle fill="#e6b9f8" layoutX="263.0" layoutY="256.0" onMouseClicked="#E3" onMousePressed="#E3" radius="22.0" stroke="WHITE" strokeType="INSIDE" />
+                        <Circle fill="#e6b9f8" layoutX="263.0" layoutY="164.0" onMouseClicked="#E2" radius="22.0" stroke="WHITE" strokeType="INSIDE" />
+                        <Circle fill="#e6b9f8" layoutX="263.0" layoutY="70.0" onMouseClicked="#E1" radius="22.0" stroke="WHITE" strokeType="INSIDE" />
+                        <VBox layoutX="14.0" layoutY="54.0" prefHeight="345.0" prefWidth="224.0" spacing="65.0">
+                           <children>
+                              <CheckBox fx:id="check1" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#nextTabpane" prefHeight="27.0" prefWidth="199.0" text="The first exercise" textAlignment="JUSTIFY" textFill="#6a0b7b">
+                                 <font>
+                                    <Font name="Cooper Black" size="17.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="check2" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#nextTabpane" prefHeight="27.0" prefWidth="214.0" text="The second exercise" textAlignment="JUSTIFY" textFill="#6a0b7b">
+                                 <font>
+                                    <Font name="Cooper Black" size="17.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="check3" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#nextTabpane" prefHeight="27.0" prefWidth="199.0" text="The third exercise" textAlignment="JUSTIFY" textFill="#6a0b7b">
+                                 <font>
+                                    <Font name="Cooper Black" size="17.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="check4" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#nextTabpane" prefHeight="27.0" prefWidth="204.0" text="The fourth exercise" textAlignment="JUSTIFY" textFill="#6a0b7b">
+                                 <font>
+                                    <Font name="Cooper Black" size="17.0" />
+                                 </font>
+                              </CheckBox>
+                           </children>
+                        </VBox>
+                        <ImageView fitHeight="33.0" fitWidth="32.0" layoutX="247.0" layoutY="148.0">
+                           <image>
+                              <Image url="@../images/icons8_treadmill_24px.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="29.0" fitWidth="29.0" layoutX="249.0" layoutY="332.0">
+                           <image>
+                              <Image url="@../images/icons8_muscle_24px.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="29.0" fitWidth="31.0" layoutX="248.0" layoutY="242.0">
+                           <image>
+                              <Image url="@../images/icons8_deadlift_30px_1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="247.0" layoutY="54.0">
+                           <image>
+                              <Image url="@../images/icons8_barbell_50px_1.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </content>
+          </Tab>
+          <Tab fx:id="Mon" disable="true" style="-fx-pref-width: 40; -fx-font-size: 12; -fx-padding: 0;" text="Mon">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Circle fill="#e6b9f8" layoutX="263.0" layoutY="346.0" onMouseClicked="#E4" radius="22.0" stroke="WHITE" strokeType="INSIDE" />
+                        <Circle fill="#e6b9f8" layoutX="263.0" layoutY="256.0" onMouseClicked="#E3" radius="22.0" stroke="WHITE" strokeType="INSIDE" />
+                        <Circle fill="#e6b9f8" layoutX="263.0" layoutY="164.0" onMouseClicked="#E2" radius="22.0" stroke="WHITE" strokeType="INSIDE" />
+                        <Circle fill="#e6b9f8" layoutX="263.0" layoutY="70.0" onMouseClicked="#E1" radius="22.0" stroke="WHITE" strokeType="INSIDE" />
+                        <VBox layoutX="14.0" layoutY="54.0" prefHeight="345.0" prefWidth="224.0" spacing="65.0">
+                           <children>
+                              <CheckBox fx:id="checkM1" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#nextTabpane" prefHeight="27.0" prefWidth="199.0" text="The first exercise" textAlignment="JUSTIFY" textFill="#6a0b7b">
+                                 <font>
+                                    <Font name="Cooper Black" size="17.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="checkM2" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#nextTabpane" prefHeight="27.0" prefWidth="202.0" text="The second exercise" textAlignment="JUSTIFY" textFill="#6a0b7b">
+                                 <font>
+                                    <Font name="Cooper Black" size="17.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="checkM3" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#nextTabpane" prefHeight="27.0" prefWidth="199.0" text="The third exercise" textAlignment="JUSTIFY" textFill="#6a0b7b">
+                                 <font>
+                                    <Font name="Cooper Black" size="17.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="checkM4" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#nextTabpane" prefHeight="27.0" prefWidth="206.0" text="The fourth exercise" textAlignment="JUSTIFY" textFill="#6a0b7b">
+                                 <font>
+                                    <Font name="Cooper Black" size="17.0" />
+                                 </font>
+                              </CheckBox>
+                           </children>
+                        </VBox>
+                        <ImageView fitHeight="34.0" fitWidth="31.0" layoutX="248.0" layoutY="53.0">
+                           <image>
+                              <Image url="@../images/icons8_barbell_50px_1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="248.0" layoutY="240.0">
+                           <image>
+                              <Image url="@../images/icons8_deadlift_30px_1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="29.0" fitWidth="31.0" layoutX="248.0" layoutY="332.0">
+                           <image>
+                              <Image url="@../images/icons8_muscle_24px.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="32.0" fitWidth="31.0" layoutX="248.0" layoutY="147.0">
+                           <image>
+                              <Image url="@../images/icons8_treadmill_24px.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </content>
+          </Tab>
+          
+          <Tab fx:id="Tues" disable="true" style="-fx-pref-width: 40; -fx-font-size: 12; -fx-padding: 0;" text="Tues">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Circle fill="#e6b9f8" layoutX="263.0" layoutY="346.0" onMouseClicked="#E4" radius="22.0" stroke="WHITE" strokeType="INSIDE" />
+                        <Circle fill="#e6b9f8" layoutX="263.0" layoutY="256.0" onMouseClicked="#E3" radius="22.0" stroke="WHITE" strokeType="INSIDE" />
+                        <Circle fill="#e6b9f8" layoutX="263.0" layoutY="164.0" onMouseClicked="#E2" radius="22.0" stroke="WHITE" strokeType="INSIDE" />
+                        <Circle fill="#e6b9f8" layoutX="263.0" layoutY="70.0" onMouseClicked="#E1" radius="22.0" stroke="WHITE" strokeType="INSIDE" />
+                        <VBox layoutX="14.0" layoutY="54.0" prefHeight="345.0" prefWidth="224.0" spacing="65.0">
+                           <children>
+                              <CheckBox fx:id="checkt1" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#nextTabpane" prefHeight="27.0" prefWidth="199.0" text="The first exercise" textAlignment="JUSTIFY" textFill="#6a0b7b">
+                                 <font>
+                                    <Font name="Cooper Black" size="17.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="checkt2" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#nextTabpane" prefHeight="27.0" prefWidth="204.0" text="The second exercise" textAlignment="JUSTIFY" textFill="#6a0b7b">
+                                 <font>
+                                    <Font name="Cooper Black" size="17.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="checkt3" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#nextTabpane" prefHeight="27.0" prefWidth="199.0" text="The third exercise" textAlignment="JUSTIFY" textFill="#6a0b7b">
+                                 <font>
+                                    <Font name="Cooper Black" size="17.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="checkt4" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#nextTabpane" prefHeight="27.0" prefWidth="204.0" text="The fourth exercise" textAlignment="JUSTIFY" textFill="#6a0b7b">
+                                 <font>
+                                    <Font name="Cooper Black" size="17.0" />
+                                 </font>
+                              </CheckBox>
+                           </children>
+                        </VBox>
+                        <ImageView fitHeight="34.0" fitWidth="31.0" layoutX="248.0" layoutY="53.0">
+                           <image>
+                              <Image url="@../images/icons8_barbell_50px_1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="32.0" fitWidth="31.0" layoutX="248.0" layoutY="147.0">
+                           <image>
+                              <Image url="@../images/icons8_treadmill_24px.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="248.0" layoutY="240.0">
+                           <image>
+                              <Image url="@../images/icons8_deadlift_30px_1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="29.0" fitWidth="31.0" layoutX="248.0" layoutY="332.0">
+                           <image>
+                              <Image url="@../images/icons8_muscle_24px.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="Wed" disable="true" style="-fx-pref-width: 40; -fx-font-size: 12; -fx-padding: 0;" text="Wed">
+               <content>
+                  <AnchorPane prefHeight="398.0" prefWidth="300.0">
+                     <children>
+                        <Circle fill="#e6b9f8" layoutX="263.0" layoutY="346.0" onMouseClicked="#E4" radius="22.0" stroke="WHITE" strokeType="INSIDE" />
+                        <Circle fill="#e6b9f8" layoutX="263.0" layoutY="256.0" onMouseClicked="#E3" radius="22.0" stroke="WHITE" strokeType="INSIDE" />
+                        <Circle fill="#e6b9f8" layoutX="263.0" layoutY="164.0" onMouseClicked="#E2" radius="22.0" stroke="WHITE" strokeType="INSIDE" />
+                        <Circle fill="#e6b9f8" layoutX="263.0" layoutY="70.0" onMouseClicked="#E1" radius="22.0" stroke="WHITE" strokeType="INSIDE" />
+                        <VBox layoutX="14.0" layoutY="54.0" prefHeight="345.0" prefWidth="224.0" spacing="65.0">
+                           <children>
+                              <CheckBox fx:id="checkw1" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#nextTabpane" prefHeight="27.0" prefWidth="199.0" text="The first exercise" textAlignment="JUSTIFY" textFill="#6a0b7b">
+                                 <font>
+                                    <Font name="Cooper Black" size="17.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="checkw2" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#nextTabpane" prefHeight="27.0" prefWidth="206.0" text="The second exercise" textAlignment="JUSTIFY" textFill="#6a0b7b">
+                                 <font>
+                                    <Font name="Cooper Black" size="17.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="checkw3" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#nextTabpane" prefHeight="27.0" prefWidth="199.0" text="The third exercise" textAlignment="JUSTIFY" textFill="#6a0b7b">
+                                 <font>
+                                    <Font name="Cooper Black" size="17.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="checkw4" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#nextTabpane" prefHeight="27.0" prefWidth="205.0" text="The fourth exercise" textAlignment="JUSTIFY" textFill="#6a0b7b">
+                                 <font>
+                                    <Font name="Cooper Black" size="17.0" />
+                                 </font>
+                              </CheckBox>
+                           </children>
+                        </VBox>
+                        <ImageView fitHeight="34.0" fitWidth="31.0" layoutX="248.0" layoutY="53.0">
+                           <image>
+                              <Image url="@../images/icons8_barbell_50px_1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="33.0" fitWidth="33.0" layoutX="248.0" layoutY="148.0">
+                           <image>
+                              <Image url="@../images/icons8_treadmill_24px.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="248.0" layoutY="240.0">
+                           <image>
+                              <Image url="@../images/icons8_deadlift_30px_1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="29.0" fitWidth="31.0" layoutX="248.0" layoutY="332.0">
+                           <image>
+                              <Image url="@../images/icons8_muscle_24px.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            
+            <Tab fx:id="Thurs" disable="true" style="-fx-pref-width: 40; -fx-font-size: 12; -fx-padding: 0;" text="Thurs">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Circle fill="#e6b9f8" layoutX="263.0" layoutY="346.0" onMouseClicked="#E4" radius="22.0" stroke="WHITE" strokeType="INSIDE" />
+                        <Circle fill="#e6b9f8" layoutX="263.0" layoutY="256.0" onMouseClicked="#E3" radius="22.0" stroke="WHITE" strokeType="INSIDE" />
+                        <Circle fill="#e6b9f8" layoutX="263.0" layoutY="164.0" onMouseClicked="#E2" radius="22.0" stroke="WHITE" strokeType="INSIDE" />
+                        <Circle fill="#e6b9f8" layoutX="263.0" layoutY="70.0" onMouseClicked="#E1" radius="22.0" stroke="WHITE" strokeType="INSIDE" />
+                        <VBox layoutX="14.0" layoutY="54.0" prefHeight="345.0" prefWidth="224.0" spacing="65.0">
+                           <children>
+                              <CheckBox fx:id="checkth1" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#nextTabpane" prefHeight="27.0" prefWidth="199.0" text="The first exercise" textAlignment="JUSTIFY" textFill="#6a0b7b">
+                                 <font>
+                                    <Font name="Cooper Black" size="17.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="checkth2" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#nextTabpane" prefHeight="27.0" prefWidth="204.0" text="The second exercise" textAlignment="JUSTIFY" textFill="#6a0b7b">
+                                 <font>
+                                    <Font name="Cooper Black" size="17.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="checkth3" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#nextTabpane" prefHeight="27.0" prefWidth="199.0" text="The third exercise" textAlignment="JUSTIFY" textFill="#6a0b7b">
+                                 <font>
+                                    <Font name="Cooper Black" size="17.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="checkth4" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#nextTabpane" prefHeight="27.0" prefWidth="206.0" text="The fourth exercise" textAlignment="JUSTIFY" textFill="#6a0b7b">
+                                 <font>
+                                    <Font name="Cooper Black" size="17.0" />
+                                 </font>
+                              </CheckBox>
+                           </children>
+                        </VBox>
+                        <ImageView fitHeight="34.0" fitWidth="31.0" layoutX="248.0" layoutY="53.0">
+                           <image>
+                              <Image url="@../images/icons8_barbell_50px_1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="34.0" fitWidth="33.0" layoutX="247.0" layoutY="147.0">
+                           <image>
+                              <Image url="@../images/icons8_treadmill_24px.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="248.0" layoutY="240.0">
+                           <image>
+                              <Image url="@../images/icons8_deadlift_30px_1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="29.0" fitWidth="31.0" layoutX="248.0" layoutY="332.0">
+                           <image>
+                              <Image url="@../images/icons8_muscle_24px.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="Fri" disable="true" style="-fx-pref-width: 40; -fx-font-size: 12; -fx-padding: 0;" text="Fri">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Circle fill="#e6b9f8" layoutX="263.0" layoutY="346.0" onMouseClicked="#E4" radius="22.0" stroke="WHITE" strokeType="INSIDE" />
+                        <Circle fill="#e6b9f8" layoutX="263.0" layoutY="256.0" onMouseClicked="#E3" radius="22.0" stroke="WHITE" strokeType="INSIDE" />
+                        <Circle fill="#e6b9f8" layoutX="263.0" layoutY="164.0" onMouseClicked="#E2" radius="22.0" stroke="WHITE" strokeType="INSIDE" />
+                        <Circle fill="#e6b9f8" layoutX="263.0" layoutY="70.0" onMouseClicked="#E1" radius="22.0" stroke="WHITE" strokeType="INSIDE" />
+                        <VBox layoutX="14.0" layoutY="54.0" prefHeight="345.0" prefWidth="224.0" spacing="65.0">
+                           <children>
+                              <CheckBox fx:id="checkf1" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#nextTabpane" prefHeight="27.0" prefWidth="199.0" text="The first exercise" textAlignment="JUSTIFY" textFill="#6a0b7b">
+                                 <font>
+                                    <Font name="Cooper Black" size="17.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="checkf2" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#nextTabpane" prefHeight="27.0" prefWidth="204.0" text="The second exercise" textAlignment="JUSTIFY" textFill="#6a0b7b">
+                                 <font>
+                                    <Font name="Cooper Black" size="17.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="checkf3" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#nextTabpane" prefHeight="27.0" prefWidth="199.0" text="The third exercise" textAlignment="JUSTIFY" textFill="#6a0b7b">
+                                 <font>
+                                    <Font name="Cooper Black" size="17.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="checkf4" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#nextTabpane" prefHeight="27.0" prefWidth="206.0" text="The fourth exercise" textAlignment="JUSTIFY" textFill="#6a0b7b">
+                                 <font>
+                                    <Font name="Cooper Black" size="17.0" />
+                                 </font>
+                              </CheckBox>
+                           </children>
+                        </VBox>
+                        <ImageView fitHeight="34.0" fitWidth="31.0" layoutX="248.0" layoutY="53.0">
+                           <image>
+                              <Image url="@../images/icons8_barbell_50px_1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="34.0" fitWidth="31.0" layoutX="248.0" layoutY="147.0">
+                           <image>
+                              <Image url="@../images/icons8_treadmill_24px.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="247.0" layoutY="240.0">
+                           <image>
+                              <Image url="@../images/icons8_deadlift_30px_1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="29.0" fitWidth="31.0" layoutX="248.0" layoutY="332.0">
+                           <image>
+                              <Image url="@../images/icons8_muscle_24px.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            
+             <Tab fx:id="Sat" disable="true" style="-fx-pref-width: 40; -fx-font-size: 12; -fx-padding: 0;" text="Sat">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Circle fill="#e6b9f8" layoutX="263.0" layoutY="346.0" onMouseClicked="#E4" radius="22.0" stroke="WHITE" strokeType="INSIDE" />
+                        <Circle fill="#e6b9f8" layoutX="263.0" layoutY="256.0" onMouseClicked="#E3" radius="22.0" stroke="WHITE" strokeType="INSIDE" />
+                        <Circle fill="#e6b9f8" layoutX="263.0" layoutY="164.0" onMouseClicked="#E2" radius="22.0" stroke="WHITE" strokeType="INSIDE" />
+                        <Circle fill="#e6b9f8" layoutX="263.0" layoutY="70.0" onMouseClicked="#E1" radius="22.0" stroke="WHITE" strokeType="INSIDE" />
+                        <VBox layoutX="14.0" layoutY="54.0" prefHeight="345.0" prefWidth="224.0" spacing="65.0">
+                           <children>
+                              <CheckBox fx:id="checks1" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#nextTabpane" prefHeight="27.0" prefWidth="199.0" text="The first exercise" textAlignment="JUSTIFY" textFill="#6a0b7b">
+                                 <font>
+                                    <Font name="Cooper Black" size="17.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="checks2" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#nextTabpane" prefHeight="27.0" prefWidth="202.0" text="The second exercise" textAlignment="JUSTIFY" textFill="#6a0b7b">
+                                 <font>
+                                    <Font name="Cooper Black" size="17.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="checks3" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#nextTabpane" prefHeight="27.0" prefWidth="199.0" text="The third exercise" textAlignment="JUSTIFY" textFill="#6a0b7b">
+                                 <font>
+                                    <Font name="Cooper Black" size="17.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox fx:id="checks4" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#nextTabpane" prefHeight="27.0" prefWidth="204.0" text="The fourth exercise" textAlignment="JUSTIFY" textFill="#6a0b7b">
+                                 <font>
+                                    <Font name="Cooper Black" size="17.0" />
+                                 </font>
+                              </CheckBox>
+                           </children>
+                        </VBox>
+                        <ImageView fitHeight="34.0" fitWidth="31.0" layoutX="248.0" layoutY="53.0">
+                           <image>
+                              <Image url="@../images/icons8_barbell_50px_1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="33.0" fitWidth="33.0" layoutX="247.0" layoutY="148.0">
+                           <image>
+                              <Image url="@../images/icons8_treadmill_24px.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="247.0" layoutY="240.0">
+                           <image>
+                              <Image url="@../images/icons8_deadlift_30px_1.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="29.0" fitWidth="31.0" layoutX="248.0" layoutY="332.0">
+                           <image>
+                              <Image url="@../images/icons8_muscle_24px.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TabPane>
+      <Button layoutX="-6.0" layoutY="432.0" mnemonicParsing="false" onAction="#updates" prefHeight="69.0" prefWidth="105.0" style="-fx-background-color: #320944;" text="My Report" textFill="WHITE" AnchorPane.bottomAnchor="-1.0">
+         <padding>
+            <Insets bottom="-30.0" />
+         </padding>
+      </Button>
+      <Button layoutX="98.0" layoutY="432.0" mnemonicParsing="false" onAction="#profile" prefHeight="69.0" prefWidth="105.0" style="-fx-background-color: #320944;" text="My Profile" textFill="WHITE" AnchorPane.bottomAnchor="-3.0">
+         <padding>
+            <Insets bottom="-30.0" />
+         </padding>
+      </Button>
+      <Button fx:id="buttonn1" layoutX="195.0" layoutY="432.0" mnemonicParsing="false" onAction="#exercises" prefHeight="69.0" prefWidth="105.0" style="-fx-background-color: #320944;" text="Challenges" textFill="WHITE" AnchorPane.bottomAnchor="-1.0" AnchorPane.rightAnchor="0.0">
+         <padding>
+            <Insets bottom="-30.0" />
+         </padding>
+      </Button>
+      <Line endX="-71.3323974609375" endY="41.352813720703125" layoutX="170.0" layoutY="451.0" opacity="0.3" startX="-71.3323974609375" startY="-1.2598876953125" stroke="WHITE" />
+      <Line endX="-71.3323974609375" endY="41.352813720703125" layoutX="267.0" layoutY="451.0" opacity="0.3" startX="-71.3323974609375" startY="-1.2598876953125" stroke="WHITE" />
+      <ImageView fitHeight="51.0" fitWidth="40.0" layoutX="229.0" layoutY="436.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8_barbell_64px_1.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="1.0" contrast="1.0" hue="1.0" saturation="1.0" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="130.0" layoutY="436.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8_profiles_64px_1.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="1.0" contrast="1.0" hue="1.0" saturation="1.0" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="27.0" layoutY="434.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8_combo_chart_64px_1.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="1.0" contrast="1.0" hue="1.0" saturation="1.0" />
+         </effect>
+      </ImageView>
+   </children>
+</Pane>
